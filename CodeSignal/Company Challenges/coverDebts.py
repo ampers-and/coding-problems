@@ -77,4 +77,38 @@ def coverDebts(s, debts, interests):
     # weighted average - subtract biggest until 
     # can spend 10% of salary, next recurse - debts[i] = debts[i] + interests[i]/100
 
-    
+    # ex - (50, [2, 2, 5], [200, 100, 150]) = 22
+
+    print("inputs: s, debts, interests", s, debts, interests)
+
+    weightedDebts = [debts[i] * (interests[i]/100) for i in len(debts)]
+
+    print("weightedDebts", weightedDebts)
+
+    a = s/10
+
+
+
+    pass
+
+5
+
+4 2 7.5
+
+4/1.15 = 3.48
+
+1.52
+
+2 2 3.48
+
+3.48
+
+4 2 4
+
+200, 150
+
+200/350 = .57
+
+
+
+
