@@ -29,12 +29,26 @@ def solution(N):
     
     m = 0
     
+    after1 = False
+    before1 = False
+    
+    if numArr[len(numArr) - 1] == '':
+        before1 = True
+    
     for i in range(len(numArr)-1):
         
-        if numArr[len(numArr)-1] == '':
+        if numArr[i] == '':
+            after1 = True
+            
+        
+        if after1:
             l = len(numArr[i])
             
             if l > m:
                 m = l
+                
+                
+            
     
     return m
+
