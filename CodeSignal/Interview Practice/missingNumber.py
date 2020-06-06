@@ -9,3 +9,7 @@ def missingNumber(arr):
     c = list(setB - setA)
 
     return c[0]
+
+
+def simplifyRational(numerator, denominator):
+    # recurse from num -> 1 to simplify?
